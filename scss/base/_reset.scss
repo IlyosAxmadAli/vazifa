@@ -29,8 +29,11 @@ body {
   background: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
   background-repeat: no-repeat;
   background-position: left top, right bottom;
+  background-attachment: fixed;
   @include responsive(mobile) {
-    background-size: cover;
+    background: url("../images/bg-top-mob.svg"), url("../images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: left top, center bottom;
   }
 }
 .container {

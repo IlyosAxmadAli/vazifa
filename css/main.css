@@ -55,10 +55,13 @@ body {
   background: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
   background-repeat: no-repeat;
   background-position: left top, right bottom;
+  background-attachment: fixed;
 }
 @media screen and (max-width: 1160px) {
   body {
-    background-size: cover;
+    background: url("../images/bg-top-mob.svg"), url("../images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: left top, center bottom;
   }
 }
 
