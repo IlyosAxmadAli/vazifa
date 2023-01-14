@@ -29,6 +29,9 @@ body {
   background: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
   background-repeat: no-repeat;
   background-position: left top, right bottom;
+  @include responsive(mobile) {
+    background-size: cover;
+  }
 }
 .container {
   width: 100%;
